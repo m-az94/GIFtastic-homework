@@ -1,0 +1,14 @@
+.container{
+    background-color: #FCCFF2;
+}
+#buttonHolder{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gifButton{
+    background-color: #F649CF;
+    color:#FFF;
+    border-radius: 12px;
+    text-align: center;
+}
