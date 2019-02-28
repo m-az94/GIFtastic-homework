@@ -1,5 +1,9 @@
-.container{
+body{
     background-color: #FCCFF2;
+}
+.container{
+    background-color: #FFF;
+    height: 100%;
 }
 #buttonHolder{
     margin-top: 10px;

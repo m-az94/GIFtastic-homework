@@ -47,10 +47,13 @@ function displayGif(){
         for (var i=0; i<results.length; i++){
             var gifImg=$("<img>");
             gifImg.attr("src", results[i].images.fixed_height.url);
+            gifImg.addClass("gifoutput");
             $("#gifHolder").prepend(gifImg);
         }
     });
 }
+
+
 
 //--------------- TEST FUNCTIONS ----------------
 createButtons();
