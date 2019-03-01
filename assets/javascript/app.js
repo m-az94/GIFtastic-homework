@@ -41,13 +41,13 @@ function displayGif(){
         url:queryURL,
         method: "GET"
     }).then(function(response){
-        console.log(response);
+        //console.log(response);
         var results=response.data;
         for (var i=0; i<results.length; i++){
             //Gif Ratings
             var imgRating =$("<p>");
             imgRating.text("Rating: "+ results[i].rating);
-            console.log(results[i].rating);
+            //console.log(results[i].rating);
 
             //Gifs
             var gifImg=$("<img>");
@@ -67,7 +67,6 @@ function displayGif(){
 function animateGif(){
     var state = $(this).attr("data-state");
     var url=$(this).attr("src");
-    $(this).attr('src', url.replace(".gif", "_s.gif"));
 
     if (state === "still") {
         $(this).attr("src", url.replace(".gif", "_s.gif"));
