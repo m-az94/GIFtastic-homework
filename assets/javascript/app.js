@@ -36,12 +36,13 @@ $("#addGif").on("click", function(){
 
 function displayGif(){
     var gif=$(this).attr("data-name");
-    var queryURL="http://api.giphy.com/v1/gifs/search?q="+gif+"&api_key=B97kzVgOxtskdBPslnAb7Acfyfs9cD40&limit=10";
+    var queryURL="https://api.giphy.com/v1/gifs/search?q="+gif+"&api_key=B97kzVgOxtskdBPslnAb7Acfyfs9cD40&limit=10";
     $.ajax({
         url:queryURL,
         method: "GET"
     }).then(function(response){
         //console.log(response);
+        $("#gifHolder").empty();
         var results=response.data;
         for (var i=0; i<results.length; i++){
             //Gif Ratings
